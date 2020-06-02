@@ -51,6 +51,7 @@ public class PhoneManager {
 		String company = sc.nextLine();
 		pList.add(new Person(name, mobile, company));
 		saveList();
+		System.out.println("[등록되었습니다.]");
 	}
 
 	// 3.삭제선택시
