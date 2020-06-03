@@ -67,10 +67,10 @@ public class PhoneManager {
 				break;
 			} catch (InputMismatchException ime) {
 				System.out.println("잘못 입력하셨습니다, 다시 입력해주세요");
-				sc = new Scanner(System.in);
+				sc.nextLine();
 			} catch (IndexOutOfBoundsException iobe) {
 				System.out.println("없는 번호입니다, 다시 입력해주세요");
-				sc = new Scanner(System.in);
+				sc.nextLine();
 			} catch (IOException e) {
 				System.out.println("저장에 실패했습니다");
 			}
