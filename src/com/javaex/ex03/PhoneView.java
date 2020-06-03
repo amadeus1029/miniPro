@@ -61,8 +61,7 @@ public class PhoneView {
     public int showDel() {
         System.out.println("<3.식제>");
         System.out.print(">번호: ");
-        int order = sc.nextInt();
-        return order;
+        return sc.nextInt();
     }
 
     // 삭제완료시 결과 출력 메소드
@@ -75,8 +74,7 @@ public class PhoneView {
         sc.nextLine();
         System.out.println("<4.검색>");
         System.out.print(">이름: ");
-        String keyword = sc.nextLine();
-        return keyword;
+        return sc.nextLine();
     }
 
     // 검색결과를 가져와 화면에 출력하는 메소드

@@ -13,7 +13,7 @@ public class PhoneRepository {
 		InputStreamReader inputReader = new InputStreamReader(input, "UTF-8");
 		BufferedReader buffR = new BufferedReader(inputReader);
 
-		List<Person> list = new ArrayList<Person>();
+		List<Person> list = new ArrayList<>();
 
 		while (true) {
 			String infoString = buffR.readLine();
@@ -45,14 +45,14 @@ public class PhoneRepository {
 	
 	//기존데이터에 새로입력받은 데이터를 추가하여 모두저장하는 메소드 
 	public void addInfo(Person phoneVO) throws IOException {
-		List<Person> list = this.getList();
+		List<Person> list = getList();
 		list.add(phoneVO);
 		saveInfo(list);
 	}
 
 	//선택한 번호의 데이터를 삭제하고 저장하는 메소드(모두 다시저장)
 	public void delInfo(int num) throws IOException {
-		List<Person> list = this.getList();
+		List<Person> list = getList();
 		list.remove(num-1);
 		saveInfo(list);
 	}
