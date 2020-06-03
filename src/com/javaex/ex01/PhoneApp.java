@@ -52,14 +52,14 @@ public class PhoneApp {
                             int order = sc.nextInt();
                             removePerson(personList, order);
                             System.out.println("[삭제되었습니다.]");
-                            sc = new Scanner(System.in);
+                            sc.nextLine();
                             break;
                         } catch (InputMismatchException ime) {
                             System.out.println("잘못 입력하셨습니다, 다시 입력해주세요");
-                            sc = new Scanner(System.in);
+                            sc.nextLine();
                         } catch (IndexOutOfBoundsException iobe) {
                             System.out.println("없는 번호입니다, 다시 입력해주세요");
-                            sc = new Scanner(System.in);
+                            sc.nextLine();
                         }
                     }
                     break;
